@@ -1,0 +1,51 @@
+@use '../utils/variables' as *;
+
+.theme-toggle {
+    padding: 0.75rem 1rem;
+
+    border: 1px solid $color-border-light;
+    border-radius: 0.75rem;
+
+    font-size: 0.9rem;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    background-color: $color-surface-light;
+    color: $color-text-light;
+
+    transition: all 0.2s ease;
+
+    &:hover {
+        background-color: #e5e5e5;
+    }
+}
+
+.dark .theme-toggle {
+    background-color: $color-surface-dark;
+    color: $color-text-dark;
+    border-color: $color-border-dark;
+
+    &:hover {
+        background-color: #2a2a2a;
+    }
+}
+
+@media (max-width: 768px) {
+    .theme-toggle {
+        padding: 0.65rem 0.85rem;
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .theme-toggle {
+        width: 100%;
+
+        padding: 0.55rem 0.75rem;
+
+        border-radius: 0.65rem;
+
+        font-size: 0.8rem;
+    }
+}

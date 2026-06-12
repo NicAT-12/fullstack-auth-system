@@ -1,0 +1,42 @@
+@use '../utils/variables' as *;
+
+.route-status {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 2rem;
+
+    &__message {
+        padding: 1.25rem 1.5rem;
+
+        border: 1px solid $color-border-light;
+        border-radius: 0.75rem;
+
+        background-color: $color-surface-light;
+
+        font-size: 1rem;
+        font-weight: 600;
+    }
+}
+
+.dark {
+    .route-status__message {
+        background-color: $color-surface-dark;
+        border-color: $color-border-dark;
+        color: $color-text-dark;
+    }
+}
+
+@media (max-width: 480px) {
+    .route-status {
+        padding: 5rem 1rem 2rem;
+
+        &__message {
+            width: 100%;
+            text-align: center;
+        }
+    }
+}

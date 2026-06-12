@@ -1,0 +1,69 @@
+@use '../utils/variables' as *;
+
+.home {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 1rem;
+
+    text-align: center;
+    padding: 2rem;
+
+    &__title {
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+
+    &__text {
+        font-size: 1.1rem;
+        opacity: 0.8;
+        margin-bottom: 1rem;
+    }
+
+    &__actions {
+        display: flex;
+        gap: 1rem;
+
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &__button {
+        padding: 0.9rem 1.5rem;
+
+        border: 1px solid $color-border-light;
+        border-radius: 0.75rem;
+
+        background-color: $color-surface-light;
+        color: $color-text-light;
+
+        text-decoration: none;
+        font-weight: 600;
+
+        transition: all 0.2s ease;
+
+        &:hover {
+            background-color: #e5e5e5;
+        }
+
+        &--secondary {
+            opacity: 0.9;
+        }
+    }
+}
+
+.dark {
+    .home__button {
+        background-color: $color-surface-dark;
+        color: $color-text-dark;
+        border-color: $color-border-dark;
+
+        &:hover {
+            background-color: #2a2a2a;
+        }
+    }
+}

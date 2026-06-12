@@ -1,0 +1,105 @@
+@use '../utils/variables' as *;
+
+.profile {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 2rem;
+
+    &__card {
+        width: 100%;
+        max-width: 500px;
+
+        padding: 2rem;
+
+        border: 1px solid $color-border-light;
+        border-radius: 1rem;
+
+        background-color: $color-surface-light;
+    }
+
+    &__title {
+        margin-bottom: 2rem;
+
+        font-size: 2rem;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    &__info {
+        padding: 1rem;
+
+        border: 1px solid $color-border-light;
+        border-radius: 0.75rem;
+
+        &:not(:last-child) {
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__label {
+        margin-bottom: 0.35rem;
+
+        font-size: 0.85rem;
+        font-weight: 600;
+        opacity: 0.7;
+    }
+
+    &__value {
+        font-size: 1rem;
+        word-break: break-word;
+    }
+
+    &__logout-btn {
+        display: block;
+
+        width: 100%;
+
+        margin-top: 1.5rem;
+        padding: 0.85rem 1rem;
+
+        border: none;
+        border-radius: 0.75rem;
+
+        background-color: $color-error;
+        color: $color-surface-light;
+
+        font-size: 1rem;
+        font-weight: 600;
+
+        cursor: pointer;
+
+        transition: opacity 0.2s ease;
+
+        &:hover {
+            opacity: 0.9;
+        }
+    }
+}
+
+.dark {
+
+    .profile__card,
+    .profile__info {
+        background-color: $color-surface-dark;
+        border-color: $color-border-dark;
+        color: $color-text-dark;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile {
+        padding: 5rem 1rem 2rem;
+
+        &__card {
+            padding: 1.5rem;
+        }
+
+        &__title {
+            font-size: 1.75rem;
+        }
+    }
+}

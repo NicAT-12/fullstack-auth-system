@@ -1,0 +1,74 @@
+@use '../utils/variables' as *;
+
+.auth-layout {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 2rem;
+
+    &__card {
+        width: 100%;
+        max-width: 450px;
+
+        padding: 2rem;
+
+        border: 1px solid $color-border-light;
+        border-radius: 1rem;
+
+        background-color: $color-surface-light;
+    }
+
+    &__header {
+        margin-bottom: 2rem;
+    }
+
+    &__title {
+        margin-bottom: 0.5rem;
+
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    &__subtitle {
+        opacity: 0.8;
+    }
+}
+
+.auth-back {
+    display: inline-block;
+
+    width: fit-content;
+
+    margin-bottom: 1.5rem;
+
+    text-decoration: none;
+
+    font-size: 0.9rem;
+    font-weight: 500;
+
+    color: inherit;
+    opacity: 0.7;
+
+    transition: opacity 0.2s ease;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.dark {
+    .auth-layout__card {
+        background-color: $color-surface-dark;
+        border-color: $color-border-dark;
+        color: $color-text-dark;
+    }
+}
+
+@media (max-width: 480px) {
+    .auth-layout {
+        padding: 5rem 1rem 2rem;
+    }
+}

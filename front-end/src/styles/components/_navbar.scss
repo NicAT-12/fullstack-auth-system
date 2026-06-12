@@ -1,0 +1,90 @@
+@use '../utils/variables' as *;
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1rem 2rem;
+
+    background-color: $color-surface-light;
+    border-bottom: 1px solid $color-border-light;
+
+    &__brand {
+        color: $color-text-light;
+
+        font-size: 1.25rem;
+        font-weight: 700;
+        text-decoration: none;
+    }
+
+    &__links {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+
+        margin-left: auto;
+        margin-right: 1rem;
+    }
+
+    &__link {
+        color: $color-text-light;
+
+        font-weight: 500;
+        text-decoration: none;
+
+        transition: opacity 0.2s ease;
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+}
+
+.dark {
+    .navbar {
+        background-color: $color-surface-dark;
+        border-color: $color-border-dark;
+
+        &__brand,
+        &__link {
+            color: $color-text-dark;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 1rem;
+
+        &__links {
+            gap: 1rem;
+
+            margin-right: 0.75rem;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        gap: 1rem;
+
+        &__brand {
+            align-self: center;
+        }
+
+        &__links {
+            width: 100%;
+
+            margin: 0;
+
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    }
+}

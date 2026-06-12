@@ -1,0 +1,24 @@
+@use '../utils/variables' as *;
+
+html,
+body,
+#root {
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+    background-color: $color-bg-light;
+    color: $color-text-light;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
+}
+
+.dark {
+    background-color: $color-bg-dark;
+    color: $color-text-dark;
+}
