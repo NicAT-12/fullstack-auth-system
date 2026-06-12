@@ -23,19 +23,19 @@ This project was created to learn and practice the complete authentication flow 
 
 ### Home
 
-![Home](./screenshots/Home.png)
+![Home](./Screenshots/Home.png)
 
 ### Login
 
-![Login](./screenshots/Login.png)
+![Login](./Screenshots/Login.png)
 
 ### Register
 
-![Register](./screenshots/Register.png)
+![Register](./Screenshots/Register.png)
 
 ### Profile
 
-![Profile](./screenshots/Profile.png)
+![Profile](./Screenshots/Profile.png)
 
 ---
 
