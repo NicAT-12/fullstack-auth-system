@@ -19,6 +19,26 @@ This project was created to learn and practice the complete authentication flow 
 
 ---
 
+## Screenshots
+
+### Home
+
+![Home](./screenshots/home.png)
+
+### Login
+
+![Login](./screenshots/login.png)
+
+### Register
+
+![Register](./screenshots/register.png)
+
+### Profile
+
+![Profile](./screenshots/profile.png)
+
+---
+
 ## Tech Stack
 
 ### Frontend
