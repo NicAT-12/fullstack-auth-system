@@ -260,7 +260,7 @@ Through this project I practiced and reinforced several full-stack development c
 
 ## Author
 
-Developed by Nicolas Torres
+Developed by Nicolas Tissoni
 
 GitHub:
 https://github.com/NicAT-12
