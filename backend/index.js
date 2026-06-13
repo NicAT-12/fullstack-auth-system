@@ -19,7 +19,10 @@ async function startServer() {
 const app = express();
 
 app.use(cors({
-    origin: 'http://localhost:5173',
+    origin: [
+        'http://localhost:5173', 
+        'https://auth-system-fullstack.vercel.app'
+    ],
     credentials: true
 }));
 
