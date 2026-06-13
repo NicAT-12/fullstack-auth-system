@@ -266,4 +266,4 @@ GitHub:
 https://github.com/NicAT-12
 
 LinkedIn:
-https://www.linkedin.com/in/nicolas-torres-dev/
+www.linkedin.com/in/nicolas-tissoni-
