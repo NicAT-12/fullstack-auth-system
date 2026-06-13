@@ -4,6 +4,16 @@ A full-stack authentication system built with React, Node.js, Express, MongoDB, 
 
 This project was created to learn and practice the complete authentication flow used in modern web applications, including user registration, login, protected routes, profile access, and logout functionality.
 
+## Live Demo
+
+Frontend:
+https://auth-system-fullstack.vercel.app
+
+Backend:
+https://auth-system-8en4.onrender.com
+
+---
+
 ## Features
 
 * User Registration
@@ -16,6 +26,18 @@ This project was created to learn and practice the complete authentication flow 
 * Dark / Light Theme
 * Form Validation
 * Responsive Design
+
+---
+
+## Security Features
+
+* Password hashing with bcrypt
+* JWT authentication
+* HTTP-only cookies
+* Protected backend routes
+* Server-side token validation
+* Secure logout process
+* Environment variables for sensitive data
 
 ---
 
@@ -52,10 +74,21 @@ This project was created to learn and practice the complete authentication flow 
 
 * Node.js
 * Express.js
-* MongoDB
+* MongoDB Atlas
 * Mongoose
 * JWT (JSON Web Tokens)
 * bcrypt
+
+---
+
+## API Endpoints
+
+| Method | Endpoint           | Description                    |
+| ------ | ------------------ | ------------------------------ |
+| POST   | /api/auth/register | Register a new user            |
+| POST   | /api/auth/login    | Authenticate user              |
+| GET    | /api/auth/profile  | Get authenticated user profile |
+| POST   | /api/auth/logout   | Logout user                    |
 
 ---
 
@@ -78,12 +111,11 @@ auth-system/
 │   └── ...
 │
 └── backend/
-    ├── src/
-    │   ├── config/
-    │   ├── controllers/
-    │   ├── middlewares/
-    │   ├── models/
-    │   └── routes/
+    ├── controllers/
+    ├── middlewares/
+    ├── models/
+    ├── routes/
+    ├── index.js
     └── ...
 ```
 
@@ -154,10 +186,10 @@ VITE_API_URL=http://localhost:5000
 Create a `.env` file inside `backend`:
 
 ```env
-PORT=5000
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
 NODE_ENV=development
+PORT=5000
 ```
 
 ---
@@ -209,6 +241,9 @@ Through this project I practiced and reinforced several full-stack development c
 * Creating reusable React components
 * Implementing responsive layouts with Sass
 * Managing application themes (Light/Dark Mode)
+* Deploying a full-stack application with Vercel and Render
+* Configuring CORS between different domains
+* Managing authentication cookies across production environments
 
 ---
 
@@ -220,7 +255,6 @@ Through this project I practiced and reinforced several full-stack development c
 * Password Recovery
 * User Roles and Permissions
 * Better Error Handling
-* Deployment (Vercel + Render/Railway)
 
 ---
 
@@ -230,3 +264,6 @@ Developed by Nicolas Torres
 
 GitHub:
 https://github.com/NicAT-12
+
+LinkedIn:
+https://www.linkedin.com/in/nicolas-torres-dev/
